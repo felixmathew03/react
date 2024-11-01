@@ -1,0 +1,20 @@
+.main{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main button{
+  height: 35px;
+  width: 40px;
+  margin: 1%;
+  border-radius: 20%;
+  border: none;
+  background-color: rgb(250, 24, 24);
+  color: white;
+  font-size: 1.5em;
+}
+.main  .pos {
+  background-color: rgb(17, 138, 6);
+}
