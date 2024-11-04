@@ -4,10 +4,10 @@ nav{
   width: 100%;
   margin-bottom: 1%;
   display: flex;
-  background-color: wheat;
+  background-color: rgba(149, 149, 149, 0.607);
   justify-content: center;
   align-items: center;
-  gap: 2.5%;
+  gap: 2.1%;
   color: rgb(3, 3, 3);
 }
 nav h3{
@@ -21,7 +21,7 @@ nav h3{
   align-items: center;
 }
 .log p{
-  font-size: 12px;
+  font-size: 16px;
 }
 .input {
   margin-right: 1%;
@@ -29,7 +29,7 @@ nav h3{
   background-color: #fcfafa;
   color: #242424;
   padding: .15rem .5rem;
-  min-height: 40px;
+  height: 35px;
   border-radius: 4px;
   outline: none;
   border: none;
@@ -44,6 +44,21 @@ input:focus {
 
 input:hover {
   outline: 1px solid lightgrey;
+}
+
+.categories{
+  margin: auto;
+  width: 80%;
+  padding: 2%;
+  background-color: white;
+  margin-bottom: 2%;
+}
+.category{
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  margin-top: 1%;
+  gap: 20px;
 }
 .main{
   margin: auto;
@@ -72,5 +87,5 @@ input:hover {
   object-fit: cover;
 }
 .item:hover{
-  transform: scale(1.02);
+  background-color: #e9e8e8;
 }
