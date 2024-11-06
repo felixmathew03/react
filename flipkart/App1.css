@@ -41,3 +41,16 @@ button:hover,
 button:focus {
   opacity: .75;
 }
+
+.details{
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 15px;
+  margin-top: 1px;
+}
+.detail{
+  border: 1px solid red;
+  padding: 1%;
+}
