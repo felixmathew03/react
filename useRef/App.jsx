@@ -1,27 +1,18 @@
-
-import { useRef,useState,useEffect } from 'react';
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
-import Nav from './Components/Nav';
-import Home from './Components/Home';
-import About from './Components/About';
+import { useEffect, useRef, useState } from 'react'
 import './App.css'
 
-
-
 function App() {
-  const [count, setCount] = useState(0);
-  const prevCountRef = useRef();
-
-  useEffect(() => {
-    prevCountRef.current = count;
-  }, [count]);
-
+  const inputRef=useRef();
+  const accesRef=()=>{
+    console.log(inputRef.current.value);
+    
+  }
   return (
-    <div>
-      <p>Current count: {count}</p>
-      <p>Previous count: {prevCountRef.current}</p>
-      <button onClick={() => setCount(count + 1)}>Increment</button>
-    </div>
-  );
+    <>
+     <input type="text" placeholder='name' ref={inputRef}/>
+     <button onClick={accesRef}>Add</button>
+    </>
+  )
 }
-export default App;
+
+export default App
